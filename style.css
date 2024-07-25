@@ -1,0 +1,174 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: url('pink.png') no-repeat center center fixed;
+    background-size: cover;
+    color: #fff;
+    overflow-x: hidden; /* Prevent horizontal scroll */
+    transition: background-color 2s ease-in-out;
+}
+
+.intro {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent background for readability */
+}
+
+.profile-photo {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    margin-right: 20px;
+}
+
+.intro-text {
+    max-width: 600px;
+}
+
+#role-cycle {
+    font-size: 1.5em;
+    margin: 20px 0;
+}
+
+#role {
+    display: inline-block;
+    font-weight: bold;
+    color: #f1c40f; /* Yellow for roles */
+}
+
+#i-am {
+    color: #fff; /* White for "I am" */
+}
+
+.fade-out {
+    opacity: 0;
+    transition: opacity 1s ease-out;
+}
+
+.fade-in {
+    opacity: 1;
+    transition: opacity 1s ease-in;
+}
+
+/* Add glow effect */
+.glow {
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.7);
+    transition: box-shadow 0.5s ease-in-out;
+}
+
+/* Glow effect for visible friend box */
+.friend-box.active {
+    box-shadow: 0 0 20px rgba(255, 0, 255, 0.7); /* Purple glow */
+}
+
+.friends {
+    padding: 50px;
+    background: rgba(0, 0, 0, 0.8); /* Semi-transparent background for friends section */
+    position: relative; /* Ensure proper stacking context for glow effect */
+}
+
+.friend-box {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.6); /* Semi-transparent background for each friend box */
+    border-radius: 10px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.friend-name {
+    color: #a020f0; /* Purple color for friend's names */
+}
+
+.friend-image {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    margin-right: 20px;
+}
+
+.friend-details {
+    max-width: 600px;
+}
+
+@media (max-width: 768px) {
+    .intro {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .profile-photo {
+        margin-bottom: 20px;
+    }
+
+    .friend-box {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .friend-image {
+        margin-bottom: 10px;
+    }
+}
+
+/* Password overlay */
+#password-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    transition: opacity 1s ease-out;
+}
+
+.password-box {
+    background: url('gold.png') no-repeat center center;
+    background-size: cover;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    width: 300px; /* Fixed width for the box */
+    max-width: 90%; /* Ensure responsiveness on smaller screens */
+}
+
+#password-input {
+    width: calc(100% - 22px); /* Full width of the box minus padding */
+    padding: 10px;
+    font-size: 1em;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    color: #333;
+    background-color: #fff;
+}
+
+#submit-password {
+    background: none;
+    border: none;
+    font-size: 2em;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+#submit-password:active {
+    transform: scale(1.1);
+    box-shadow: 0 0 10px rgba(255, 215, 0, 0.8); /* Golden glow */
+}
+
+/* Main content styles */
+#main-content {
+    display: none;
+    /* Ensure it's hidden initially */
+
+}
+/* Contact Form */

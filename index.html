@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <!-- Background music -->
+    <audio id="background-music" src="musicsong.mp3" preload="auto" loop></audio>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', (event) => {
+            const audio = document.getElementById('background-music');
+            audio.play().catch(error => {
+                console.error('Playback failed:', error);
+            });
+        });
+    </script>
+    
+</body>
+<a href="https://rishi09saroj.github.io/contacttome/" class="round-button" target="_self">Wanna to talk🐟</a>
+<style>
+    /* CSS for the rounded rectangular button */
+    .round-button {
+      position: fixed;
+      bottom: 20px;
+      left: 20px;
+      width: auto; /* Make width automatic based on content */
+      min-width: 150px; /* Minimum width to ensure text fits */
+      padding: 10px 20px; /* Add padding for better appearance */
+      background-color: #007bff; /* Blue color */
+      border: none;
+      border-radius: 25px; /* Slightly rounded corners */
+      color: #fff;
+      font-size: 16px;
+      text-align: center;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background-color 0.3s, transform 0.2s;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional shadow for better visibility */
+      white-space: nowrap; /* Prevents text from wrapping */
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer; /* Changes cursor to pointer on hover */
+    }
+
+    .round-button:hover {
+      background-color: #0056b3; /* Darker blue on hover */
+    }
+
+    .round-button:active {
+      transform: scale(0.95); /* Smooth clicking animation */
+    }
+  </style>
+</html>
+    <!-- Password/Name Entry Overlay -->
+    <div id="password-overlay">
+        <div class="password-box">
+            <input type="text" id="password-input" placeholder="Enter your name">
+            <button id="submit-password">💗</button>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div id="main-content" class="fade-out">
+        <div class="intro">
+            <img src="profile-photo.png" alt="Rishi's Photo" class="profile-photo">
+            <div class="intro-text">
+                <h1>Hello, I'm Rishi!</h1>
+                <div class="role-animation">
+                    <span id="role-text"></span>
+                </div>
+                <p>I'm 16 years old, a student of class X. I am a crazy type of student who is studying for knowledge, not just for achieving marks. Mujhe kuch naya seekhna bahut pasand hai. I have a few friends I trust blindly. Ye hai mere kuch dosto ke baare mein. They are like family to me, and I can't imagine my life without them. Life is incomplete without these amazing people. They have been with me through thick and thin, and I feel blessed to have them in my life. Har din kuch naya seekhne ki koshish karta hoon aur mere dost hamesha mera saath dete hain. Friends are the family we choose, and I couldn't have chosen better. Aur bas yahi hai meri choti si duniya, full of fun, laughter, and endless memories.</p>
+            </div>
+        </div>
+
+        <!-- Friends Section -->
+        <div class="friends">
+            <h2>My Trusted Friends</h2>
+            <div class="friend-box">
+                <img src="vaishnavi.png" alt="Vaishnavi" class="friend-image">
+                <div class="friend-details">
+                    <h3>Vaishnavi</h3>
+                    <p>Vaishnavi is my best friend since 2022. She knows me very well and cares about me a lot. She understands what I like and dislike the most. It's been 4 years with her now. Vaishnavi ke bina, meri zindagi adhoori hai. We have shared so many memories together, from laughing at the silliest jokes to supporting each other through tough times. Whenever I need advice or just someone to talk to, Vaishnavi is always there. She has a way of making even the worst days seem better. Hamari dosti ekdum unique hai, full of fun, masti, and endless conversations. She's not just a friend; she's like a sister to me. Aur kya bolu uske baare mein, she's simply the best!</p>
+                </div>
+            </div>
+            <div class="friend-box">
+                <img src="swati.png" alt="Swati" class="friend-image">
+                <div class="friend-details">
+                    <h3>Swati</h3>
+                    <p>Swati is like my sister. She helps me with my homework and assignments. She always supports and cheers me up. Swati is more than a friend to me; she's like family. Jab bhi mujhe help ki zaroorat hoti hai, Swati hamesha ready hoti hai. She is my go-to person for advice, and I trust her completely. Hum dono ke beech ka bond bahut strong hai. We have faced so many challenges together, and she has never let me down. She's always there to lift my spirits and motivate me to do better. Swati ke bina, school life boring hoti. She's not just a friend, she's my partner in crime, and I cherish every moment spent with her. Aur bas yahi hai hamari story, full of support and endless laughter.</p>
+                </div>
+            </div>
+            <div class="friend-box">
+                <img src="ansh.png" alt="Ansh" class="friend-image">
+                <div class="friend-details">
+                    <h3>Ansh</h3>
+                    <p>Ansh is my best male friend. He loves me a lot and helps me in every possible way. He is just like a brother to me. Ansh ke saath, main hamesha safe feel karta hoon. We have done so many fun activities together, and he always has my back. He is more than a friend; he's my brother. Hum dono ki bonding ekdum solid hai, and we understand each other perfectly. Ansh is always there to support me, no matter what. Hamari dosti ekdum unique hai, full of adventure and excitement. He's my go-to person for all my crazy ideas, and we always end up having a blast. Aur kya kahu uske baare mein, he's simply amazing and irreplaceable in my life.</p>
+                </div>
+            </div>
+            <div class="friend-box">
+                <img src="prajjwal.png" alt="Prajjwal" class="friend-image">
+                <div class="friend-details">
+                    <h3>Prajjwal</h3>
+                    <p>Prajjwal is like an elder brother. He supports me in every situation and always stands up for me. Prajjwal meri life mein ek strong pillar hai. He has guided me through many ups and downs, and I truly value his wisdom and support. We have shared many memorable moments, from late-night study sessions to celebrating achievements. He is more than just a friend; he's a mentor and a source of strength. Without Prajjwal, I feel incomplete. His encouragement and advice have shaped me into who I am today. Aur bas yahi hai hamara rishta, full of respect and endless support.</p>
+                </div>
+            </div>
+            <div class="friend-box">
+                <img src="saksham.png" alt="Saksham" class="friend-image">
+                <div class="friend-details">
+                    <h3>Saksham</h3>
+                    <p>Saksham is that friend who is always ready to go anywhere with me. If I need a vehicle, he’s ready to drive me. Saksham ek aise dost hain jo har waqt mere saath rahte hain. We’ve been through countless adventures together, and his readiness to help at any moment is truly invaluable. He makes sure I never feel alone and supports me in every possible way. His friendship is a true blessing, and his willingness to go the extra mile is something I deeply appreciate. Aur bas yahi hai hamari dosti, full of spontaneity and endless fun.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
